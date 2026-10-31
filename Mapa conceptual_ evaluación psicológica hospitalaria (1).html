@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapa conceptual: evaluación psicológica hospitalaria</title>
+<style>
+:root{--bg:#f7f6f2;--card:#ffffff;--text:#23262b;--muted:#5d636b;--line:#8a9099;--border:#d9d6cc;--accent:#2f6f6a;
+--c1:#b4572f;--c2:#2f6f6a;--c3:#5b5fa8;--c4:#9a7a1c;--c5:#a04068;--c6:#3d7a3a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17191c;--card:#22252a;--text:#ecebe6;--muted:#a3a8b0;--line:#7b828c;--border:#3a3e45;--accent:#6fb8b0;
+--c1:#e08a60;--c2:#6fb8b0;--c3:#9ea2e6;--c4:#d9b84e;--c5:#e07aa2;--c6:#7fc77b}}
+:root[data-theme="dark"]{--bg:#17191c;--card:#22252a;--text:#ecebe6;--muted:#a3a8b0;--line:#7b828c;--border:#3a3e45;--accent:#6fb8b0;
+--c1:#e08a60;--c2:#6fb8b0;--c3:#9ea2e6;--c4:#d9b84e;--c5:#e07aa2;--c6:#7fc77b}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:1.5rem;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 14px;font-size:.95rem;font-family:system-ui,sans-serif}
+.lecturas{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;font-family:system-ui,sans-serif;font-size:.9rem}
+.lecturas a{color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:6px 14px;text-decoration:none;background:var(--card)}
+.lecturas a:hover{text-decoration:underline}
+.map{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:6px}
+svg{width:100%;height:auto;display:block}
+.node{cursor:pointer;outline:none}
+.node rect.box{fill:var(--card);stroke-width:2.5;transition:fill .15s}
+.node:hover rect.box,.node:focus rect.box{fill:var(--bg)}
+.node.sel rect.box{stroke-width:5}
+.node text{font-family:system-ui,sans-serif;fill:var(--text)}
+.node .t{font-size:17px;font-weight:700}
+.node .s{font-size:13px;fill:var(--muted)}
+.node .n{font-size:14px;font-weight:700;fill:#fff}
+.edge{stroke:var(--line);stroke-width:2;fill:none}
+.edge.back{stroke-dasharray:6 5}
+.lbl{font-family:system-ui,sans-serif;font-size:13.5px;font-style:italic;fill:var(--muted);text-anchor:middle;paint-order:stroke;stroke:var(--card);stroke-width:6px;stroke-linejoin:round}
+.hint{font-family:system-ui,sans-serif;font-size:.85rem;color:var(--muted);margin:8px 4px 0}
+.panel{margin-top:14px;background:var(--card);border:1px solid var(--border);border-left:6px solid var(--accent);border-radius:12px;padding:16px 18px;font-family:system-ui,sans-serif}
+.panel h2{margin:0 0 6px;font-size:1.15rem}
+.panel p{margin:6px 0}
+.tag{font-weight:700;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;display:block;margin-top:10px}
+.diego{margin-top:18px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px;font-family:system-ui,sans-serif}
+.diego h2{margin:0 0 10px;font-size:1.15rem}
+.flow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.flow div{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:var(--bg);font-size:.92rem}
+.flow b{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--accent);margin-bottom:4px}
+@media (max-width:640px){.flow{grid-template-columns:1fr}.node .s{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>La evaluación psicológica en el ámbito hospitalario</h1>
+<p class="sub">Mapa conceptual interactivo · Toca o haz clic en cada recuadro para ver la explicación y su aplicación al caso de Diego.</p>
+
+<p class="sub"><strong>Autora:</strong> Doménica Sofía Ochoa</p>
+
+<div class="lecturas">
+<a href="https://utpl.instructure.com/courses/90436/files/27145366?wrap=1" target="_blank" rel="noopener">📖 Texto base: El psicólogo en el ámbito hospitalario (pp. 77–84 y 89)</a>
+<a href="https://link.springer.com/article/10.1007/s10880-025-10067-3" target="_blank" rel="noopener">📄 Yost y Cavanagh (2025): Assessment e Individual Intervention</a>
+</div>
+
+<div class="map">
+<svg viewBox="0 0 960 470" role="img" aria-label="Mapa conceptual del proceso de evaluación psicológica hospitalaria">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--line)"/></marker></defs>
+
+<!-- conexiones -->
+<path class="edge" marker-end="url(#ar)" d="M250 90H370"/>
+<text class="lbl" x="310" y="78">orienta</text>
+
+<path class="edge" marker-end="url(#ar)" d="M590 90H710"/>
+<text class="lbl" x="650" y="78">sugiere qué</text>
+<text class="lbl" x="650" y="108">contrastar</text>
+
+<path class="edge" marker-end="url(#ar)" d="M560 134L730 336"/>
+<text class="lbl" x="590" y="250">aporta información para</text>
+
+<path class="edge" marker-end="url(#ar)" d="M820 134V336"/>
+<text class="lbl" x="860" y="240">aporta datos para</text>
+
+<path class="edge" marker-end="url(#ar)" d="M710 380H590"/>
+<text class="lbl" x="650" y="368">fundamenta</text>
+
+<path class="edge" marker-end="url(#ar)" d="M370 380H250"/>
+<text class="lbl" x="310" y="368">se valora en</text>
+
+<path class="edge back" marker-end="url(#ar)" d="M140 336V134"/>
+<text class="lbl" x="140" y="232">permite revisar</text>
+
+<!-- nodos -->
+<g class="node" id="n1" tabindex="0" role="button"><rect class="box" x="30" y="46" width="220" height="88" rx="14" stroke="var(--c1)"/><circle cx="48" cy="64" r="13" fill="var(--c1)"/><text class="n" x="48" y="69" text-anchor="middle">1</text><text class="t" x="140" y="88" text-anchor="middle">Demanda</text><text class="s" x="140" y="108" text-anchor="middle">motivo de evaluación</text></g>
+<g class="node" id="n2" tabindex="0" role="button"><rect class="box" x="370" y="46" width="220" height="88" rx="14" stroke="var(--c2)"/><circle cx="388" cy="64" r="13" fill="var(--c2)"/><text class="n" x="388" y="69" text-anchor="middle">2</text><text class="t" x="480" y="88" text-anchor="middle">Entrevista</text><text class="s" x="480" y="108" text-anchor="middle">psicológica</text></g>
+<g class="node" id="n3" tabindex="0" role="button"><rect class="box" x="710" y="46" width="220" height="88" rx="14" stroke="var(--c3)"/><circle cx="728" cy="64" r="13" fill="var(--c3)"/><text class="n" x="728" y="69" text-anchor="middle">3</text><text class="t" x="820" y="88" text-anchor="middle">Métodos</text><text class="s" x="820" y="108" text-anchor="middle">complementarios</text></g>
+<g class="node" id="n4" tabindex="0" role="button"><rect class="box" x="710" y="336" width="220" height="88" rx="14" stroke="var(--c4)"/><circle cx="728" cy="354" r="13" fill="var(--c4)"/><text class="n" x="728" y="359" text-anchor="middle">4</text><text class="t" x="820" y="378" text-anchor="middle">Integración</text><text class="s" x="820" y="398" text-anchor="middle">de la información</text></g>
+<g class="node" id="n5" tabindex="0" role="button"><rect class="box" x="370" y="336" width="220" height="88" rx="14" stroke="var(--c5)"/><circle cx="388" cy="354" r="13" fill="var(--c5)"/><text class="n" x="388" y="359" text-anchor="middle">5</text><text class="t" x="480" y="378" text-anchor="middle">Objetivos y técnicas</text><text class="s" x="480" y="398" text-anchor="middle">objetivos terapéuticos</text></g>
+<g class="node" id="n6" tabindex="0" role="button"><rect class="box" x="30" y="336" width="220" height="88" rx="14" stroke="var(--c6)"/><circle cx="48" cy="354" r="13" fill="var(--c6)"/><text class="n" x="48" y="359" text-anchor="middle">6</text><text class="t" x="140" y="378" text-anchor="middle">Seguimiento</text><text class="s" x="140" y="398" text-anchor="middle">y revisión</text></g>
+</svg>
+</div>
+<p class="hint">La flecha punteada indica que el proceso es circular: lo que se aprende en el seguimiento puede cambiar la demanda inicial.</p>
+
+<div class="panel" id="panel" aria-live="polite"></div>
+
+<div class="diego">
+<h2>Aplicación al caso de Diego</h2>
+<div class="flow">
+<div><b>Información pendiente</b>Cómo el dolor y el mal descanso influyen en que Diego participe poco en las actividades indicadas.</div>
+<div><b>Procedimiento elegido</b>Entrevista breve y adaptada a su estado físico, más observación de su conducta durante las actividades (puede apoyarse en el personal de enfermería).</div>
+<div><b>Justificación</b>Lo que Diego cuenta (dolor, sueño, preocupación laboral) se contrasta con lo que se observa. Así se evita suponer «falta de motivación» y la evaluación responde a lo que pidió el equipo. Es viable en la cama del hospital y no requiere pruebas.</div>
+</div>
+</div>
+<div class="diego">
+<h2>Referencias</h2>
+<p style="margin:0 0 10px;padding-left:2em;text-indent:-2em;font-size:.95rem">Salamero, M., Peri, J. M., & Gutiérrez, F. (2003). La evaluación psicológica en el ámbito hospitalario. En E. Remor, P. Arranz, & S. Ulla (Eds.), <em>El psicólogo en el ámbito hospitalario</em> (pp. 75–92). Desclée de Brouwer.</p>
+<p style="margin:0;padding-left:2em;text-indent:-2em;font-size:.95rem">Yost, J. S., & Cavanagh, C. E. (2025). Clinical education: Consultation-liaison psychology services. <em>Journal of Clinical Psychology in Medical Settings, 32</em>, 3–7. <a href="https://doi.org/10.1007/s10880-025-10067-3" target="_blank" rel="noopener" style="color:var(--accent)">https://doi.org/10.1007/s10880-025-10067-3</a></p>
+</div>
+</div>
+
+<script>
+var D={
+n1:{c:"--c1",t:"1. Demanda o motivo de evaluación",
+w:"Es el punto de partida: quién pide la valoración y qué necesita saber. Conviene traducirla en preguntas concretas y separar lo que dice el paciente, lo que se observa y lo que solo se supone.",
+d:"El equipo médico pide comprender por qué Diego participa poco. La demanda no es un diagnóstico, sino entender sus dificultades de participación."},
+n2:{c:"--c2",t:"2. Entrevista psicológica",
+w:"Conversación dirigida para conocer la vivencia del paciente: cómo se siente, qué le preocupa, cómo descansa, cuánto dolor percibe. En el hospital se adapta al cansancio, al dolor y al tiempo disponible.",
+d:"Preguntas abiertas y breves sobre su estado emocional, el dolor, el sueño y su preocupación por no poder trabajar. Responde poco, así que se ayuda con preguntas sencillas y una escucha paciente."},
+n3:{c:"--c3",t:"3. Métodos complementarios",
+w:"Otras fuentes que permiten contrastar lo dicho en la entrevista: observación de la conducta, información del equipo de salud, historia clínica o cuestionarios breves. Se eligen solo si ayudan a responder la demanda; según Yost y Cavanagh, cada evaluación debe responder a la pregunta de consulta.",
+d:"Observación de cómo participa en las actividades y qué lo dificulta. En la ficha no se aplican pruebas ni se inventan resultados."},
+n4:{c:"--c4",t:"4. Integración de la información",
+w:"Se reúne y compara todo lo obtenido para construir una comprensión del caso: qué factores podrían explicar la conducta y cuáles faltan por confirmar. Es una hipótesis de trabajo que se puede modificar.",
+d:"Se cruza lo que Diego dice (dolor, mal descanso, preocupación) con lo observado, para ver si la baja participación se relaciona con el dolor, el ánimo o las preocupaciones económicas."},
+n5:{c:"--c5",t:"5. Objetivos terapéuticos y selección de técnicas",
+w:"Con esa comprensión se acuerdan con el paciente metas concretas, realistas y revisables; después se escoge la técnica. Yost y Cavanagh señalan intervenciones breves (terapia cognitivo-conductual, entrevista motivacional, terapia de aceptación y compromiso) para afrontar la hospitalización, el dolor y los cambios físicos.",
+d:"Objetivo provisional: ayudar a Diego a identificar lo que afecta su participación y mejorarla poco a poco, sujeto a lo que confirme la evaluación."},
+n6:{c:"--c6",t:"6. Seguimiento y revisión",
+w:"Se vuelve a conversar y observar para ver si hay avances. Si cambian los datos, se ajusta el objetivo o la técnica. Los hallazgos pueden obligar a replantear incluso la demanda inicial. El personal de primera línea puede ayudar con las observaciones.",
+d:"Se revisa si mejora su participación. Si el dolor aumenta, sigue durmiendo mal o hay más malestar emocional, se adapta el plan a sus necesidades."}
+};
+function show(id){
+  var x=D[id],p=document.getElementById("panel");
+  p.style.borderLeftColor="var("+x.c+")";
+  p.innerHTML="<h2></h2><span class='tag'>En mis palabras</span><p></p><span class='tag'>En el caso de Diego</span><p></p>";
+  p.querySelector("h2").textContent=x.t;
+  var ps=p.querySelectorAll("p");ps[0].textContent=x.w;ps[1].textContent=x.d;
+  document.querySelectorAll(".node").forEach(function(n){n.classList.toggle("sel",n.id===id)});
+}
+document.querySelectorAll(".node").forEach(function(n){
+  n.addEventListener("click",function(){show(n.id)});
+  n.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();show(n.id)}});
+});
+show("n1");
+</script>
+</body>
+</html>
